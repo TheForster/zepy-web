@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link rel="stylesheet" href="/styles/loader-style.css" />
+      <link rel="stylesheet" href="/styles/content-style.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+      <link rel="icon" href="images/zepy.png" />
+      <title>Zepy</title>
+   </head>
+   <body>
+      <div class="loader-container">
+         <div class="box"></div>
+         <div class="circle"></div>
+         <img class="image" src="images/zepy.png" alt="zepy" />
+
+         <div class="sticks">
+            <div class="top-stick"></div>
+            <div class="end-stick"></div>
+         </div>
+      </div>
+
+      <div class="content-container" style="display: none">
+         <!-- <img class="image" src="images/zepy.png" alt="zepy" /> -->
+         <h4>
+            Birkaç sebepten ötürü bu site daha tamamlanmamıştır.<br /><span>Anlayışınız için teşekkür ederiz.</span>
+         </h4>
+
+         <!-- <img src="images/zepy.png" alt="zepy" />
+         <h2>ZEPY</h2>
+
+         <div class="countdown">
+            <div class="box">
+               <h3 id="days">00</h3>
+               <span>Days</span>
+            </div>
+            <div class="box">
+               <h3 id="hours">00</h3>
+               <span>Hours</span>
+            </div>
+            <div class="box">
+               <h3 id="minutes">00</h3>
+               <span>Minutes</span>
+            </div>
+            <div class="box">
+               <h3 id="seconds">00</h3>
+               <span>Seconds</span>
+            </div>
+         </div> -->
+
+         <!-- <div class="countdown-box"></div> -->
+      </div>
+
+      <script>
+         $(window).on('load', () => {
+            $('.loader-container').fadeOut(2500, () => {
+               $('.content-container').fadeIn(500);
+            });
+         });
+      </script>
+   </body>
+</html>

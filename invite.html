@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="refresh" content="0;URL=https://discord.gg/ba7eYmUMdk">
+<link rel="stylesheet" href="/styles/loader-style.css" />
+<link rel="stylesheet" href="/styles/content-style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="icon" href="images/zepy.png" />
+<title>Zepy</title>
+</head>
+<body>
+<div class="loader-container">
+<div class="box"></div>
+<div class="circle"></div>
+<img class="image" src="images/zepy.png" alt="zepy" />
+<div class="sticks">
+<div class="top-stick"></div>
+<div class="end-stick"></div>
+</div>
+</div>
+<div class="content-container" style="display: none">
+</div>
+<script>
+         $(window).on('load', () => {
+            $('.loader-container').fadeOut(2500, () => {
+               $('.content-container').fadeIn(500);
+            });
+         });
+      </script>
+</body>
+</html>
